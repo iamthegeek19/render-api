@@ -52,7 +52,10 @@ def deploy():
     )
 
     class_names = train_ds.class_names
-    return {'class_names': class_names}
+    return {
+                'class_names': class_names,
+                'name': 'hameno'
+            }
     # ### Loading the model
     # model = tf.keras.models.load_model('native_model')
     # res = model.evaluate(val_ds)
